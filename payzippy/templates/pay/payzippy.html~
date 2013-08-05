@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PAYZIPPY {% block title %}HOMEPAGE{% endblock %}</title>
+</head>
+<body>
+<div id="header">
+<h1>PAYZIPPY TRIAL</h1>
+</div>
+<a href="{% url form %}">Click here </a>
+<div id='content'>
+{% block content %}{% endblock %}
+</div>
+</body>
+</html>

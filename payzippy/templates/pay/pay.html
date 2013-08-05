@@ -1,0 +1,8 @@
+{% extends "payzippy.html" %}
+{% block title %}PAYMENT{% endblock %}
+{% block content %}
+<form action="/charging/" method="post">{% csrf_token %}
+{{form.as_p}}
+<input type="submit" value="SUBMIT" />
+</form>
+{% endblock %}
